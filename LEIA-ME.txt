@@ -1,0 +1,35 @@
+SITE — RESTAURANTE MAGALHÃES
+Domínio: restaurantemagalhaes.com (Spaceship)
+Alojamento: GitHub Pages
+
+PUBLICAR (primeira vez)
+1. Criar repositório PÚBLICO no GitHub
+2. Add file > Upload files: carregar o CONTEÚDO desta pasta
+   (o index.html tem de ficar na RAIZ do repositório)
+3. Settings > Pages > Source: Deploy from a branch > main > / (root)
+4. Settings > Pages > Custom domain: restaurantemagalhaes.com
+5. No Spaceship, criar os registos DNS (ver abaixo)
+6. Quando o aviso desaparecer, marcar "Enforce HTTPS"
+
+DNS NO SPACESHIP
+  4 registos A, Host "@":
+     185.199.108.153
+     185.199.109.153
+     185.199.110.153
+     185.199.111.153
+  1 registo CNAME, Host "www", valor:
+     <o-teu-utilizador>.github.io
+  Apagar os registos de estacionamento que o Spaceship cria por defeito.
+  Confirmar os 4 IPs na documentação do GitHub Pages antes de os usar.
+
+ATUALIZAR
+  Texto: abrir o ficheiro no GitHub, clicar no lápis, editar, Commit changes.
+  Fotos: entrar em images/, carregar a nova com O MESMO nome de ficheiro.
+  O site atualiza-se sozinho em cerca de 1 minuto.
+
+NÃO APAGAR
+  CNAME  (guarda o domínio; sem ele o site volta ao endereço github.io)
+
+SE O DOMÍNIO MUDAR
+  Editar: CNAME, robots.txt, sitemap.xml e as tags og:url no topo
+  das 4 páginas HTML.
